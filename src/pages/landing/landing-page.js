@@ -79,7 +79,7 @@ const LandingPage = () => {
                             <Grid item={true} xs="auto" md="auto">
                                 <ScrollLink
                                     spy={true}
-                                    to="sponsors"
+                                    to="contact"
                                     delay={100}
                                     duration={2000}
                                     smooth={true}>
@@ -98,7 +98,7 @@ const LandingPage = () => {
                             <Grid item={true} xs="auto" md="auto">
                                 <ScrollLink
                                     spy={true}
-                                    to="sponsors"
+                                    to="products"
                                     delay={100}
                                     duration={2000}
                                     smooth={true}>
@@ -120,7 +120,7 @@ const LandingPage = () => {
             </Box>
 
             <Element>
-                <Element id="home" name="about">
+                <Element id="home" name="home">
                     <Box>
                         <Overlay
                             children={

@@ -5,7 +5,7 @@ import {
     Card,
     CardContent,
     CardMedia,
-    Container,
+    Container, Divider,
     Grid,
     Link,
     Stack,
@@ -28,6 +28,7 @@ import CoreValue from "../../components/shared/core-value";
 import banner from "./../../assets/images/banner/banner.jpg";
 import Overlay from "../../components/shared/overlay";
 import 'react-multi-carousel/lib/styles.css';
+import Product from "../../components/shared/product";
 
 const LandingPage = () => {
     return (
@@ -491,6 +492,32 @@ const LandingPage = () => {
                 </Element>
 
                 <Element id="products" name="products">
+                    <Container sx={{py: 8}} maxWidth="xl">
+                        <Box sx={{minHeight: '50vh', paddingY: 4}}>
+                            <Stack direction="column" spacing={2}>
+                                <Typography
+                                    sx={{color: 'text.primary'}}
+                                    align="center"
+                                    variant="h4">
+                                    Our Products
+                                </Typography>
+
+                                <Divider variant="fullWidth" sx={{my: 2}} light={true}/>
+
+                                <Grid container={true} spacing={2}>
+                                    {
+                                        LUXURY_MART_DATA.PRODUCTS.map((product, index) => {
+                                            return (
+                                                <Grid key={index} item={true} xs={12} md={4} lg={3}>
+                                                    <Product product={product}/>
+                                                </Grid>
+                                            )
+                                        })
+                                    }
+                                </Grid>
+                            </Stack>
+                        </Box>
+                    </Container>
                 </Element>
 
             </Element>

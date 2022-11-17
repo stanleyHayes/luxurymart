@@ -147,6 +147,7 @@ const LandingPage = () => {
 
                         <Container maxWidth="xl">
                             <Typography
+                                align="center"
                                 variant="h4"
                                 sx={{color: 'secondary.main', mb: 4, textTransform: 'uppercase'}}>
                                 Mission & Vision
@@ -341,7 +342,7 @@ const LandingPage = () => {
                             minHeight: '30vh',
                             alignItems: 'center',
                             py: 8,
-                            backgroundColor: "background.paper"
+                            backgroundColor: "background.default"
                         }}>
                         <Container maxWidth="xl">
                             <Typography variant="h5" align="center" sx={{color: 'text.primary', mb: 4}}>
@@ -481,7 +482,7 @@ const LandingPage = () => {
                         </Container>
                     </Box>
 
-                    <Box sx={{py: 8, backgroundColor: 'background.default'}}>
+                    <Box sx={{py: 8, backgroundColor: 'background.paper'}}>
                         <ContactForm
                             title="Send Message"
                             caption="Send us a message and our customer support will help you find answers to your questions."

@@ -7,8 +7,7 @@ const CoreValue = ({value}) => {
         <Card elevation={0} sx={{height: '100%'}}>
             <CardContent>
                 <Typography
-                    mb={2}
-                    sx={{color: 'primary.main'}}
+                    sx={{color: 'primary.main', textTransform: "capitalize"}}
                     variant="h5"
                     align="center">{value.name}</Typography>
             </CardContent>

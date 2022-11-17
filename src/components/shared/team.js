@@ -17,23 +17,18 @@ const Team = ({team}) => {
                     }
                 }
             }}>
-            <CardMedia
-                className="media"
-                src={team.image}
-                sx={{
-                    overflow: 'hidden',
-                    height: 250,
-                    objectFit: 'cover',
-                    objectPosition: 'top'
-                }}
-                component="img"
-            />
             <CardContent>
+                <Avatar variant="circular" sx={{width: 100, height: 100, mb: 2}}>
+                    <Typography variant="h6" align="center" sx={{color: 'text.primary', mb: 1}}>
+                        {UTILS.getInitials(team.name)}
+                    </Typography>
+                </Avatar>
+
                 <Typography variant="h6" align="center" sx={{color: 'text.primary', mb: 1}}>
                     {team.name}
                 </Typography>
                 <Typography variant="body2" align="center" sx={{color: 'text.secondary', mb: 1}}>
-                    {team.role} ({team.occupation})
+                    {team.role}
                 </Typography>
             </CardContent>
         </Card>

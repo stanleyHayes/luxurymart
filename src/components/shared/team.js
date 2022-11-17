@@ -1,4 +1,5 @@
-import {Card, CardContent, CardMedia, Typography} from "@mui/material";
+import {Avatar, Card, CardContent, CardMedia, Typography} from "@mui/material";
+import {UTILS} from "../../utils/utils";
 
 const Team = ({team}) => {
 

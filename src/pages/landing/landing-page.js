@@ -482,7 +482,7 @@ const LandingPage = () => {
                         </Container>
                     </Box>
 
-                    <Box sx={{py: 8, backgroundColor: 'background.paper'}}>
+                    <Box sx={{py: 8, backgroundColor: 'background.default'}}>
                         <ContactForm
                             title="Send Message"
                             caption="Send us a message and our customer support will help you find answers to your questions."

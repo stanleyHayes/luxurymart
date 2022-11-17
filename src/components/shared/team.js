@@ -1,16 +1,19 @@
-import {Avatar, Card, CardContent, CardMedia, Typography} from "@mui/material";
+import {Avatar, Card, CardContent, Stack, Typography} from "@mui/material";
 import {UTILS} from "../../utils/utils";
 
 const Team = ({team}) => {
 
     return (
         <Card
-            elevation={0}
             variant="outlined"
             sx={{
                 mx: 2,
                 height: '100%',
                 position: 'relative',
+                borderBottomRightRadius: 0,
+                borderTopRightRadius: 32,
+                borderBottomLeftRadius: 32,
+                borderTopLeftRadius: 0,
                 '&:hover': {
                     '& .media': {
                         transform: 'scale(1.1)',
@@ -19,11 +22,20 @@ const Team = ({team}) => {
                 }
             }}>
             <CardContent>
-                <Avatar variant="circular" sx={{width: 100, height: 100, mb: 2}}>
-                    <Typography variant="h6" align="center" sx={{color: 'text.primary', mb: 1}}>
-                        {UTILS.getInitials(team.name)}
-                    </Typography>
-                </Avatar>
+                <Stack direction="row" justifyContent="center">
+                    <Avatar variant="circular" sx={{
+                        width: 100, height: 100, mb: 2,
+                        backgroundColor: "light.secondary",
+                        borderBottomRightRadius: 0,
+                        borderTopRightRadius: 32,
+                        borderBottomLeftRadius: 32,
+                        borderTopLeftRadius: 0,
+                    }}>
+                        <Typography variant="h3" align="center" sx={{color: 'secondary.main', mb: 1}}>
+                            {UTILS.getInitials(team.name)}
+                        </Typography>
+                    </Avatar>
+                </Stack>
 
                 <Typography variant="h6" align="center" sx={{color: 'text.primary', mb: 1}}>
                     {team.name}

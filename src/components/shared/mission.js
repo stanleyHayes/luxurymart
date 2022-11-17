@@ -2,7 +2,14 @@ import {Card, CardContent, Stack, Typography} from "@mui/material";
 
 const Mission = ({icon, title, description}) => {
     return (
-        <Card sx={{height: "100%"}} elevation={0} variant="elevation">
+        <Card
+            sx={{
+                height: "100%",
+                borderBottomRightRadius: 0,
+                borderTopRightRadius: 32,
+                borderBottomLeftRadius: 32,
+                borderTopLeftRadius: 0,
+            }} elevation={0} variant="elevation">
             <CardContent>
                 <Stack sx={{mb: 4}} direction="row" spacing={4} alignItems="center" justifyContent="center">
                     {icon}

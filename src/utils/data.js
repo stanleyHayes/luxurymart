@@ -1,25 +1,39 @@
-import banner from "./../assets/images/banner/banner.jpg";
+import kofi from "./../assets/images/team/kofi.jpg";
+import kwabena from "../assets/images/team/kwabena.jpg";
+import elikem from "../assets/images/team/elikem.jpg";
+import david from "../assets/images/team/david.jpg";
+import nelson from "../assets/images/team/nelson.jpg";
+import akutteh from "../assets/images/team/akutteh.jpg";
 
 const TEAM = [
     {
         name: "Kwabena Kusi Kwakye",
         role: "business sales manager",
-        image: banner
+        image: kwabena
     },
     {
         name: "Emmanuel Elikem Agbenyo",
         role: "operations manager",
-        image: banner
+        image: elikem
     },
     {
         name: "Kofi Nkunim Owusu-Yeboah",
         role: "marketing manager",
-        image: banner
+        image: kofi
     },
     {
         name: "David Agbemador",
         role: "Human resource manager",
-        image: banner
+        image: david
+    },
+    {
+        name: "Delise Nelson - Cofie",
+        role: "Creative director",
+        image: nelson
+    }, {
+        name: "Kelvin Akutteh",
+        role: "Assistant marketing executive",
+        image: akutteh
     },
 ];
 

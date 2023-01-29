@@ -1,5 +1,4 @@
-import {Card, CardContent, Grid, Typography} from "@mui/material";
-import {grey} from "@mui/material/colors";
+import {Card, CardContent, Typography} from "@mui/material";
 
 const CoreValue = ({value}) => {
 

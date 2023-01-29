@@ -1,4 +1,4 @@
-import {Avatar, Box, Card, CardContent, CardMedia, Rating, Stack, Typography} from "@mui/material";
+import {Avatar, Card, CardContent, Rating, Stack, Typography} from "@mui/material";
 import currencyFormatter from "currency-formatter";
 import {UTILS} from "../../utils/utils";
 
